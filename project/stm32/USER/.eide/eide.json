@@ -1,0 +1,339 @@
+{
+  "name": "VirtualCOMPort",
+  "type": "ARM",
+  "dependenceList": [],
+  "srcDirs": [],
+  "virtualFolder": {
+    "name": "<virtual_root>",
+    "files": [],
+    "folders": [
+      {
+        "name": "CMSIS",
+        "files": [
+          {
+            "path": "../CMSIS/CM3/CORE/core_cm3.c"
+          },
+          {
+            "path": "../CMSIS/CM3/stm32f10x_it.c"
+          },
+          {
+            "path": "../CMSIS/CM3/system_stm32f10x.c"
+          },
+          {
+            "path": "../CMSIS/CM3/STARTUP/startup_stm32f10x_md.s"
+          }
+        ],
+        "folders": []
+      },
+      {
+        "name": "FWLIB",
+        "files": [
+          {
+            "path": "../CMSIS/STM32LIB/src/misc.c"
+          },
+          {
+            "path": "../CMSIS/STM32LIB/src/stm32f10x_exti.c"
+          },
+          {
+            "path": "../CMSIS/STM32LIB/src/stm32f10x_fsmc.c"
+          },
+          {
+            "path": "../CMSIS/STM32LIB/src/stm32f10x_gpio.c"
+          },
+          {
+            "path": "../CMSIS/STM32LIB/src/stm32f10x_rcc.c"
+          },
+          {
+            "path": "../CMSIS/STM32LIB/src/stm32f10x_usart.c"
+          },
+          {
+            "path": "../CMSIS/STM32LIB/src/stm32f10x_adc.c"
+          },
+          {
+            "path": "../CMSIS/STM32LIB/src/stm32f10x_bkp.c"
+          },
+          {
+            "path": "../CMSIS/STM32LIB/src/stm32f10x_can.c"
+          },
+          {
+            "path": "../CMSIS/STM32LIB/src/stm32f10x_cec.c"
+          },
+          {
+            "path": "../CMSIS/STM32LIB/src/stm32f10x_crc.c"
+          },
+          {
+            "path": "../CMSIS/STM32LIB/src/stm32f10x_dac.c"
+          },
+          {
+            "path": "../CMSIS/STM32LIB/src/stm32f10x_dbgmcu.c"
+          },
+          {
+            "path": "../CMSIS/STM32LIB/src/stm32f10x_dma.c"
+          },
+          {
+            "path": "../CMSIS/STM32LIB/src/stm32f10x_flash.c"
+          },
+          {
+            "path": "../CMSIS/STM32LIB/src/stm32f10x_i2c.c"
+          },
+          {
+            "path": "../CMSIS/STM32LIB/src/stm32f10x_iwdg.c"
+          },
+          {
+            "path": "../CMSIS/STM32LIB/src/stm32f10x_pwr.c"
+          },
+          {
+            "path": "../CMSIS/STM32LIB/src/stm32f10x_rtc.c"
+          },
+          {
+            "path": "../CMSIS/STM32LIB/src/stm32f10x_sdio.c"
+          },
+          {
+            "path": "../CMSIS/STM32LIB/src/stm32f10x_spi.c"
+          },
+          {
+            "path": "../CMSIS/STM32LIB/src/stm32f10x_tim.c"
+          },
+          {
+            "path": "../CMSIS/STM32LIB/src/stm32f10x_wwdg.c"
+          }
+        ],
+        "folders": []
+      },
+      {
+        "name": "SYSTEM",
+        "files": [
+          {
+            "path": "../SYSTEM/delay/delay.c"
+          },
+          {
+            "path": "../SYSTEM/sys/sys.c"
+          },
+          {
+            "path": "../SYSTEM/usart/usart.c"
+          }
+        ],
+        "folders": []
+      },
+      {
+        "name": "USER",
+        "files": [
+          {
+            "path": "main.c"
+          },
+          {
+            "path": "../Soft/Task/interface.C"
+          }
+        ],
+        "folders": []
+      },
+      {
+        "name": "HARDWARE",
+        "files": [
+          {
+            "path": "../HARDWARE/LED/led.c"
+          },
+          {
+            "path": "../HARDWARE/LCD/lcd.c"
+          },
+          {
+            "path": "../HARDWARE/AD5933/AD5933.C"
+          }
+        ],
+        "folders": []
+      }
+    ]
+  },
+  "outDir": "build",
+  "deviceName": null,
+  "packDir": null,
+  "miscInfo": {
+    "uid": "cd3f0ac4864a1854ba0807368f25581a"
+  },
+  "targets": {
+    "VirtualCOMPort": {
+      "excludeList": [],
+      "toolchain": "AC5",
+      "compileConfig": {
+        "cpuType": "Cortex-M3",
+        "floatingPointHardware": "none",
+        "scatterFilePath": "",
+        "useCustomScatterFile": false,
+        "storageLayout": {
+          "RAM": [
+            {
+              "tag": "RAM",
+              "id": 1,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "noInit": false
+            },
+            {
+              "tag": "RAM",
+              "id": 2,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "noInit": false
+            },
+            {
+              "tag": "RAM",
+              "id": 3,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "noInit": false
+            },
+            {
+              "tag": "IRAM",
+              "id": 1,
+              "mem": {
+                "startAddr": "0x20000000",
+                "size": "0x5000"
+              },
+              "isChecked": true,
+              "noInit": false
+            },
+            {
+              "tag": "IRAM",
+              "id": 2,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "noInit": false
+            }
+          ],
+          "ROM": [
+            {
+              "tag": "ROM",
+              "id": 1,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "isStartup": false
+            },
+            {
+              "tag": "ROM",
+              "id": 2,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "isStartup": false
+            },
+            {
+              "tag": "ROM",
+              "id": 3,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "isStartup": false
+            },
+            {
+              "tag": "IROM",
+              "id": 1,
+              "mem": {
+                "startAddr": "0x8000000",
+                "size": "0x20000"
+              },
+              "isChecked": true,
+              "isStartup": true
+            },
+            {
+              "tag": "IROM",
+              "id": 2,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "isStartup": false
+            }
+          ]
+        },
+        "options": "null",
+        "archExtensions": ""
+      },
+      "uploader": "JLink",
+      "uploadConfig": {
+        "bin": "",
+        "baseAddr": "",
+        "cpuInfo": {
+          "vendor": "null",
+          "cpuName": "null"
+        },
+        "proType": 1,
+        "speed": 8000,
+        "otherCmds": ""
+      },
+      "uploadConfigMap": {},
+      "custom_dep": {
+        "name": "default",
+        "incList": [
+          "../CMSIS/CM3",
+          "../CMSIS/CM3/CORE",
+          "../CMSIS/CM3/STARTUP",
+          "../CMSIS/STM32LIB/inc",
+          "../SYSTEM/delay",
+          "../SYSTEM/sys",
+          "../SYSTEM/usart",
+          ".",
+          "../HARDWARE",
+          "../Com-Rule",
+          "../HARDWARE/LCD",
+          "../HARDWARE/AD5933",
+          "../Soft/Task",
+          "../HARDWARE/LED",
+          ".cmsis/include",
+          "RTE/_VirtualCOMPort"
+        ],
+        "libList": [],
+        "defineList": [
+          "STM32F10X_MD",
+          "USE_STDPERIPH_DRIVER"
+        ]
+      },
+      "builderOptions": {
+        "AC5": {
+          "version": 4,
+          "beforeBuildTasks": [],
+          "afterBuildTasks": [],
+          "global": {
+            "use-microLIB": false,
+            "output-debug-info": "enable"
+          },
+          "c/cpp-compiler": {
+            "optimization": "level-0",
+            "one-elf-section-per-function": true,
+            "c99-mode": true,
+            "C_FLAGS": "--diag_suppress=1 --diag_suppress=1295",
+            "CXX_FLAGS": "--diag_suppress=1 --diag_suppress=1295",
+            "warnings": "unspecified"
+          },
+          "asm-compiler": {},
+          "linker": {
+            "output-format": "elf",
+            "xo-base": "",
+            "ro-base": "0x08000000",
+            "rw-base": "0x20000000"
+          }
+        }
+      }
+    }
+  },
+  "version": "3.6"
+}
